@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700;900&family=Montserrat:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gym-green: #E60000;
+  --color-gym-blue: #FF4D4D;
+  --color-gym-gold: #D4A017;
+  --color-gym-black: #0A0A0A;
+  --color-gym-dark: #141414;
+  --color-gym-white: #FFFFFF;
+  --color-primary: #E60000;
+  --color-background: #0A0A0A;
+  --color-foreground: #FFFFFF;
+  --color-muted: #141414;
+  --color-muted-foreground: #a1a1aa;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+
+  --animate-spin: spin 1s linear infinite;
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+:root {
+  --destructive-foreground: oklch(1 0 0);
+  --primary: 0 100% 45%; 
+  --background: 0 0% 4%;
+  --foreground: 0 0% 100%;
+  --muted: 0 0% 8%;
+  --muted-foreground: 0 0% 63%;
+  --border: 0 0% 15%;
+}
+
+.dark {
+  --background: 0 0% 4%;
+  --foreground: 0 0% 100%;
+}
+
+body {
+  @apply bg-gym-black text-gym-white font-sans antialiased overflow-x-hidden pt-20;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display text-gym-white uppercase tracking-wider;
+}
+
+@utility text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-red-600 to-red-400;
+}
+
+@utility text-gold {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-gym-gold to-yellow-200;
+}
