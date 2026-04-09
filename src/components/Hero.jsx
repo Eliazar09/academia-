@@ -30,7 +30,7 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-5xl md:text-7xl font-display font-black tracking-widest text-white leading-[1.1] uppercase mb-6 drop-shadow-lg">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-display font-black tracking-widest text-white leading-[1.1] uppercase mb-6 drop-shadow-lg">
               Sua Jornada <br />
               <span className="text-[#E60000]">Fitness Começa Aqui</span>
             </h1>
